@@ -20,11 +20,29 @@ def factorial(n):
 print(factorial(10))
 
 #3
+def primo(numero): 
+  if numero <= 1: 
+    return False 
+  for i in range(2, numero): 
+    if numero % i == 0: 
+      return False 
+  return True 
 
-
-
+if primo(43): 
+  print("Es primo") 
+else: print("No es primo")
 
 #4
+def suma_list(nums):
+  total = 0
+  for suma in nums:
+    total += suma
+  return total
 
+print(suma_list([1,3,5,7,9]))
 
 #5
+def reversed(text):
+  return text[::-1]
+
+print(reversed("ordenador"))
