@@ -55,7 +55,11 @@ WHERE id = 1;
 9. Crear una tabla llamada "Productos" con las columnas: id (entero, clave
 primaria), nombre (texto) y precio (decimal).
 */
-
+CREATE TABLE IF NOT EXISTS productos(
+	id INT PRIMARY KEY,
+	nombre VARCHAR(255),
+	precio DECIMAL
+)
 /*
 10. Insertar varios productos en la tabla "Productos" con diferentes valores.
 */
