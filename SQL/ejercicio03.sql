@@ -33,5 +33,6 @@ WHERE ID = 5;
 nombres de los productos que han comprado (utiliza un INNER JOIN con la
 tabla "Productos").
 */
-
+SELECT usuarios.nombre, productos.nombre FROM public.usuarios
+INNER JOIN public.productos ON usuarios.id = productos.id;
 
